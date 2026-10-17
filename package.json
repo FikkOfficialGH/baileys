@@ -1,5 +1,5 @@
 {
-  "name": "@poucode/baileys",
+  "name": "@FikkOfficial/baileys",
   "type": "module",
   "version": "1.0.0",
   "description": "A WebSockets library for interacting with WhatsApp Web \u2014 PouCode fork of Baileys",
