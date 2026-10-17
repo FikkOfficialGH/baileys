@@ -28,7 +28,7 @@ npm install github:pou-code/Baileys
 Or add it to your `package.json` manually:
 ```json
 "dependencies": {
-  "@poucode/baileys": "github:pou-code/Baileys"
+  "@whiskeysockets/baileys": "github:FikkOfficialGH/baileys"
 }
 ```
 
@@ -37,7 +37,7 @@ Already have a bot built on the original `@whiskeysockets/baileys` and don't wan
 name points to this fork:
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "github:pou-code/Baileys"
+  "@whiskeysockets/baileys": "github:FikkOfficialGH/baileys"
 }
 ```
 With this alias, keep using `require('@whiskeysockets/baileys')` in your code as-is — npm will
@@ -45,7 +45,7 @@ resolve it to this fork under the hood.
 
 You can also pin to a specific branch or commit:
 ```bash
-npm install github:pou-code/Baileys#main
+npm install github:FikkOfficialGH/baileys#main
 ```
 
 ## Import
@@ -53,7 +53,7 @@ npm install github:pou-code/Baileys#main
 const {
   default: makeWASocket,
   // other exports
-} = require('@poucode/baileys');
+} = require('@whiskeysockets/baileys');
 ```
 
 ---
@@ -65,7 +65,7 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@poucode/baileys');
+} = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome'),
@@ -79,7 +79,7 @@ const {
   default: makeWASocket,
   fetchLatestWAWebVersion,
   Browsers
-} = require('@poucode/baileys');
+} = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome'),
@@ -100,7 +100,7 @@ console.log("Your pairing code: " + code);
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@poucode/baileys');
+} = require('@whiskeysockets/baileys');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
